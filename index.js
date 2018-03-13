@@ -29,15 +29,15 @@ function viewCart() {
       let ars = "In your cart, you have ";
         for(let i = 0; i < cart.length; i++) {
           if (i === cart.length - 1) {
-            ars += `${cart[i].itemName} at $${cart[i].itemPrice}.`;
+            ars += `${cart[i].itemName} at \$${cart[i].itemPrice}.`;
           }
 
           else if (i === cart.length - 2) {
-              ars += `${cart[i].itemName} at $${cart[i].itemPrice} and `;
+              ars += `${cart[i].itemName} at \$${cart[i].itemPrice} and `;
           }
 
           else {
-              ars += `${cart[i].itemName} at $${cart[i].itemPrice}, `;
+              ars += `${cart[i].itemName} at \$${cart[i].itemPrice}, `;
           }
     }
     return ars;
